@@ -10,7 +10,7 @@ def Main():
         #json_credential = 'cloudrun-credentials-266520-72b78095e227.json'
         #credentials = service_account.IDTokenCredentials.from_service_account_file(json_credential, target_audience = host)
 
-        filename = "params_xy.json"
+        filename = "params_small.json"
 
         with open(filename) as data:
             params = json.load(data)
