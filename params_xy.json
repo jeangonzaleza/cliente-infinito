@@ -1,0 +1,90 @@
+[
+{
+	"model_id": "test_model",
+	"working_dir": "gs://proyecto-testing-266520-modelos-sondajes/",
+	"files": [{"file_id": "1", "output_path": "output/", "model_path" : "25x25x15_rbk_2019_v01_au.csv", "sample_path": -1 }],
+	"model_coords": {
+		"x": {"column_name": "xcentre", "sample_col_name": -1, "size": -1},
+		"y": {"column_name": "ycentre", "sample_col_name": -1, "size": -1},
+		"z": {"column_name": "zcentre", "sample_col_name": -1, "size": -1}
+	},
+	"plot_order" : [
+		{ "u": "x", "v": "y", "w": "z", "section_pos": -1, "section_index": -1}
+	],
+	"variables" : [
+		{
+			"name": "i90",
+			"nan_value": -99.0,
+	    	"limit_values": -1,
+	    	"sample_step": -1,
+	    	"sample_size": -1,
+	    	"is_categorical": false,
+	    	"files_assoc": [
+					{"file_id": "1", "column_name": "i90_ley_au_05", "sample_col_name": -1}
+			]
+		},
+		{
+			"name": "au_more_prob",
+			"nan_value": -1,
+			"limit_values": -1,
+			"sample_step": -1,
+	    	"sample_size": -1,
+	    	"is_categorical": true,
+	    	"categories": {
+		        "-99": {
+		          "label": "NaN",
+		          "color": [255, 255, 255]
+		        },
+		        "1": {
+		          "label": "1",
+		          "color": [0, 0, 146]
+		        },
+		        "2": {
+		          "label": "2",
+		          "color": [0, 0, 254]
+		        },
+		        "3": {
+		          "label": "3",
+		          "color": [0, 79, 254]
+		        },
+		        "4": {
+		          "label": "4",
+		          "color": [0, 182, 254]
+		        },
+		        "5": {
+		          "label": "5",
+		          "color": [23, 254, 230]
+		        },
+		        "6": {
+		          "label": "6",
+		          "color": [127, 254, 127]
+		        },
+		        "7": {
+		          "label": "7",
+		          "color": [238, 254, 15]
+		        },
+		        "8": {
+		          "label": "8",
+		          "color": [254, 166, 0]
+		        },
+		        "9": {
+		          "label": "9",
+		          "color": [254, 55, 0]
+		        },
+		        "10": {
+		          "label": "10",
+		          "color": [214, 0, 0]
+		        }
+	      	},
+	      	"files_assoc": [{"file_id": "1", "column_name": "au_more_prob_ug", "sample_col_name": -1}]
+
+		}
+	],
+	"geo_ref" : {
+		"East": "x",
+		"North": "y",
+		"Elevation": "z"
+	},
+	"scale_factor" : 15.0
+}
+]

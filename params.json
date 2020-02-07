@@ -1,0 +1,46 @@
+[
+{
+	"model_id": "large_model",
+	"working_dir": "gs://proyecto-testing-266520-modelos-sondajes/",
+	"files": [
+		{ "file_id": "1", "output_path": "output/", "model_path" : "alten_reg.csv", "sample_path": -1 }	
+	],
+	"model_coords": {
+		"x": {"column_name": "xcentre", "sample_col_name": -1, "size": -1},
+		"y": {"column_name": "ycentre", "sample_col_name": -1, "size": -1},
+		"z": {"column_name": "zcentre", "sample_col_name": -1, "size": -1}
+	},
+	"plot_order" : [
+		{ "u": "x", "v": "y", "w": "z", "section_pos": -1, "section_index": -1}
+	],
+	"variables": [
+		{
+		"name": "ind1",
+		"nan_value": -99.0,
+      	"limit_values": -1,
+      	"sample_step": -1,
+      	"sample_size": -1,
+      	"is_categorical": true,
+      	"categories": {
+				"0.0": {
+					"label": "0.0",
+					"color": [255, 0, 255]
+				},
+				"1.0": {
+					"label": "1.0",
+					"color": [255,255,0]
+				}
+			},
+      	"files_assoc": [
+			{"file_id": "1", "column_name": "ind1", "sample_col_name": -1}
+		]
+		}
+	],
+	"geo_ref" : {
+		"East": "x",
+		"North": "y",
+		"Elevation": "z"
+	},
+	"scale_factor": 5.0
+}
+]
