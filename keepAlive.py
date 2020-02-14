@@ -6,7 +6,7 @@ def Main():
   while(True):
     try:
       host = 'http://34.66.186.52:8080/keepalive'
-      requests.get(host, timeout=30)
+      print(requests.get(host, timeout=30).text)
       time.sleep(10)
     except:
       print("Something went wrong. The process will call the server again in 10 minutes")
