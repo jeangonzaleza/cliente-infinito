@@ -7,4 +7,4 @@ RUN pip3 install requests
 
 ADD . /app
 
-CMD ["python3","keepAlive"]
+CMD ["python3","keepAlive.py"]
